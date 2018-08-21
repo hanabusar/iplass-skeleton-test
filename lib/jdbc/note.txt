@@ -1,0 +1,6 @@
+place library that has no public maven repository here 
+
+current library
+---
+ojdbc8.jar (oracle jdbc driver)
+sqljdbc42.jar (MS SQL Server jdbc driver)
