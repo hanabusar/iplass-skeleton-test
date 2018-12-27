@@ -195,7 +195,17 @@ This software includes third party components, as follows:
 
 - Bouncy Castle Provider
   Copyright (c) The Legion of the Bouncy Castle Inc.
-  Licensed under the MIT License.
+  Licensed under the Bouncy Castle Licence.
+  https://www.bouncycastle.org
+
+- Bouncy Castle S/MIME API
+  Copyright (c) The Legion of the Bouncy Castle Inc.
+  Licensed under the Bouncy Castle Licence.
+  https://www.bouncycastle.org
+
+- Bouncy Castle PKIX API
+  Copyright (c) The Legion of the Bouncy Castle Inc.
+  Licensed under the Bouncy Castle Licence.
   https://www.bouncycastle.org
 
 - caffeine
