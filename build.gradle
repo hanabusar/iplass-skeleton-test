@@ -30,6 +30,9 @@ dependencies {
 	// Infinispanを利用する場合は以下のコメントアウトを外してください。
 //	runtime group: 'org.iplass', name: 'iplass-infinispan', version: iPLAssVersion
 
+	// Redisを利用する場合は以下のコメントアウトを外してください。
+//	runtime group: 'org.iplass', name: 'iplass-redis', version: iPLAssVersion
+
 	//provided JavaEE7 apis
 	//Servlet
 	compileOnly 'javax.servlet:javax.servlet-api:3.1.0'
