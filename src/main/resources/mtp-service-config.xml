@@ -25,6 +25,11 @@
 	<inherits>/infinispan-service-config.xml</inherits>
 	-->
 
+	<!-- Redisを利用する場合は以下のコメントアウトを外してください。 -->
+	<!--
+	<inherits>/redis-service-config.xml</inherits>
+	-->
+
 	<!--
 		標準的な環境で動作させるために必要となる設定箇所のみプロパティを抽出しています。
 		この他のプロパティを変更したい場合は、ライブラリ「iplass-core-x.x.x.jar」内に格納されている
@@ -32,7 +37,8 @@
 		「mtp-core-service-config-postgre.xml」、「mtp-core-service-config-sqlserver.xml」、
 		ライブラリ「iplass-gem-x.x.x.jar」内に格納されている「gem-service-config.xml」、
 		ライブラリ「iplass-web-x.x.x.jar」内に格納されている「mtp-web-service-config.xml」、
-		ライブラリ「iplass-tools-x.x.x.jar」内に格納されている「mtp-tools-service-config.xml」を参照し、
+		ライブラリ「iplass-tools-x.x.x.jar」内に格納されている「mtp-tools-service-config.xml」、
+		ライブラリ「iplass-redis-x.x.x.jar」内に格納されている「redis-service-config.xml」を参照し、
 		必要な箇所をこのファイルに指定してください。
 	-->
 
