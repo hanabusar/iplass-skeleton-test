@@ -429,6 +429,11 @@ This software includes third party components, as follows:
   Licensed under GNU Lesser General Public License v3.0.
   https://github.com/TIBCOSoftware/jasperreports
 
+- Java JWT (JJWT)
+  Copyright (C) 2014 jsonwebtoken.io
+  Licensed under the Apache License 2.0.
+  https://github.com/jwtk/jjwt
+
 - Javassist
   Copyright (C) 1999-2017 by Shigeru Chiba.
   Licensed under the Mozilla Public License Version 1.1, the GNU Lesser General Public License Version 2.1 or later, or the Apache License Version 2.0.
