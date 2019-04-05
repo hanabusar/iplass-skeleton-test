@@ -445,6 +445,11 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   https://github.com/jboss-logging/jboss-logging
 
+- JGroups
+  Copyright (c) Red Hat, Inc.
+  Licensed under the Apache License 2.0.
+  http://www.jgroups.org/index.html
+
 - JSON in Java
   Copyright (c) JSON.org
   Licensed under The JSON License.(http://json.org/license.html)
