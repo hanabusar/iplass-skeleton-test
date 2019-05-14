@@ -3,4 +3,3 @@ place library that has no public maven repository here
 current library
 ---
 ojdbc8.jar (oracle jdbc driver)
-mssql-jdbc-7.2.1.jre8.jar (MS SQL Server jdbc driver)
