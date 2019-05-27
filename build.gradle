@@ -25,6 +25,7 @@ dependencies {
 
 	runtime group: 'org.iplass', name: 'iplass-admin', version: iPLAssVersion
 	runtime group: 'org.iplass', name: 'iplass-tools', version: iPLAssVersion
+
 	providedRuntime group: 'org.iplass', name: 'iplass-tools-batch', version: iPLAssVersion, transitive: false
 
 	// Infinispanを利用する場合は以下のコメントアウトを外してください。
@@ -35,7 +36,7 @@ dependencies {
 
 	//provided JavaEE7 apis
 	//Servlet
-	compileOnly 'javax.servlet:javax.servlet-api:3.1.0'
+	providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 	//JSP
 	compileOnly 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.2-b02'
 	//Expression Language
@@ -119,4 +120,17 @@ task createEntityClass(type: JavaExec, group: 'application', description : 'crea
 	main = "org.iplass.mtp.tools.batch.entity.EntityJavaMappingClassCreator"
 	classpath = sourceSets.main.runtimeClasspath
 	standardInput = System.in
+}
+
+// マージ済service-config表示ツール実行
+//   引数：
+//     -m [モード]   : モード(PARSE_ONLY:パースのみ、PARSE_LOAD:パース及びサービスのロード)、未指定時はPARSE_ONLY
+//     -o [ファイル] : 出力ファイル名、未指定時はコンソール出力
+//   実行例１：パースのみ、コンソール出力
+//     gradlew viewMergedServiceConfig
+//   実行例２：パース及びサービスのロード、'skeleton-service-config.xml'ファイルへ出力
+//     gradlew viewMergedServiceConfig --args="-m PARSE_LOAD -o skeleton-service-config.xml"
+task viewMergedServiceConfig(type: JavaExec, group: 'application', description : 'view merged service-config.') {
+	main = "org.iplass.mtp.tools.batch.config.ServiceConfigViewer"
+	classpath = sourceSets.main.runtimeClasspath
 }
