@@ -102,6 +102,7 @@
 	<!-- Rdb Connection Settings -->
 	<service>
 		<interface>org.iplass.mtp.impl.rdb.connection.ConnectionFactory</interface>
+
 		<!-- DriverManager base ConnectionFactory -->
 		<class>org.iplass.mtp.impl.rdb.connection.DriverManagerConnectionFactory</class>
 
@@ -136,10 +137,24 @@
 		<property name="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
 		-->
 
-		<!-- DataSource base ConnectionFactory -->
+		<!-- DataSource base ConnectionFactory (for via JNDI) -->
 		<!--
 		<class>org.iplass.mtp.impl.rdb.connection.DataSourceConnectionFactory</class>
 		<property name="dataSourceName" value="java:comp/env/jdbc/yourDataSourceName" />
+		-->
+
+		<!-- DataSource base ConnectionFactory (for direct generation) -->
+		<!-- The following settings are an example using HikariCP and MySQL. -->
+		<!--
+		<class>org.iplass.mtp.impl.rdb.connection.DataSourceConnectionFactory</class>
+		<property name="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+			<property name="jdbcUrl" value="jdbc:mysql://server:3306/mtdb" />
+			<property name="username" value="XXXXX" />
+			<property name="password" value="XXXXX" />
+			<property name="dataSourceProperties">
+				<property name="serverTimezone" value="JST" />
+			</property>
+		</property>
 		-->
 
 		<!-- if sql execution exceeds this milliseconds, log sql by warn level.(0 means no log by warn level) -->
@@ -310,8 +325,8 @@
 		<!--
 		<property name="authenticationProvider" class="org.iplass.mtp.impl.auth.authenticate.rememberme.RememberMeTokenAuthenticationProvider">
 			<property name="authenticationProvider" class="org.iplass.mtp.impl.auth.authenticate.builtin.BuiltinAuthenticationProvider">
-	 			<property name="updatable" value="true" />
-	 			<property name="providerName" value="default" />
+				<property name="updatable" value="true" />
+				<property name="providerName" value="default" />
 
 				<property name="passwordHashSettings">
 					<property name="version" value="1" />
