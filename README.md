@@ -1,3 +1,5 @@
+lang: [English](./README-EN.md) | [日本語](./README.md)
+
 # iplass-skeleton
 
 iPLAssベースのカスタムアプリケーションを作成する場合のgradleプロジェクトのスケルトンです。
