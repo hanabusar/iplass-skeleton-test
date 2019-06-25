@@ -1,3 +1,5 @@
+lang: [English](./README-EN.md) | [日本語](./README.md)
+
 # iplass-skeleton
 
 This is the skeleton part of the gradle project for making iPLAss based custom applications.
