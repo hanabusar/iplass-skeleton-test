@@ -109,6 +109,10 @@ tasks.withType(GroovyCompile) {
 	options.encoding = 'UTF-8'
 }
 
+tasks.withType(JavaExec) {
+	systemProperties System.properties
+}
+
 // テナント作成ツール実行
 task runTenantBatch(type: JavaExec, group: 'application', description : 'execute tenant batch.') {
 	main = "org.iplass.mtp.tools.batch.tenant.TenantBatch"
