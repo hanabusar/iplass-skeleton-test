@@ -110,7 +110,9 @@ tasks.withType(GroovyCompile) {
 }
 
 tasks.withType(JavaExec) {
-	systemProperties System.properties
+	if (System.getProperty('mtp.config') != null) {
+		systemProperty 'mtp.config', System.getProperty('mtp.config')
+	}
 }
 
 // テナント作成ツール実行
