@@ -55,10 +55,10 @@ dependencies {
 	compileOnly group: 'javax.validation', name: 'validation-api', version: '1.1.0.Final'
 
 	//javax activation for java11
-	compileOnly group: 'javax.activation', name: 'activation', version: '1.1.1'
+	compileOnly group: 'jakarta.activation', name: 'jakarta.activation-api', version: '1.2.1'
 
 	//JAXB for java11
-	compileOnly group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+	compileOnly group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '2.3.2'
 
 	//if your app server is tomcat 8.5, use this
 	//jstl runtime
@@ -69,7 +69,10 @@ dependencies {
 	}
 
 	//java mail runtime
-	runtime group: 'com.sun.mail', name: 'javax.mail', version: '1.5.6'
+	runtime(group: 'com.sun.mail', name: 'javax.mail', version: '1.5.6') {
+		//use com.sun.activation:jakarta.activation
+		exclude(group: 'javax.activation', module: 'activation')
+	}
 
 	//Bean validation runtime
 	runtime group: 'javax.validation', name: 'validation-api', version: '1.1.0.Final'
@@ -83,9 +86,11 @@ dependencies {
 	runtime group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version: '2.8.9'
 
 	//JAXB runtime for java11
-	runtime group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
-	runtime group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.3.0.1'
-	runtime group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.1'
+	runtime group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '2.3.2'
+	runtime group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.3.2'
+
+	//JAF runtime for java11
+	runtime group: 'com.sun.activation', name: 'jakarta.activation', version: '1.2.1'
 
 	testCompile 'junit:junit:4.12'
 
@@ -94,9 +99,9 @@ dependencies {
 	// 以下のJDBCドライバはテナント作成ツール(runTenantBatchタスク)の実行に必要となります。
 	// 実行する場合は使用するJDBCドライバのコメントアウトを外してください。
 	// OracleのJDBCドライバについては'lib/jdbc'に配置してください。
-//	providedRuntime 'mysql:mysql-connector-java:8.0.16'
-//	providedRuntime 'org.postgresql:postgresql:42.2.5'
-//	providedRuntime 'com.microsoft.sqlserver:mssql-jdbc:7.2.2.jre8'
+//	providedRuntime 'mysql:mysql-connector-java:8.0.18'
+//	providedRuntime 'org.postgresql:postgresql:42.2.8'
+//	providedRuntime 'com.microsoft.sqlserver:mssql-jdbc:7.4.1.jre8'
 
 	providedRuntime fileTree('lib').include('**/*.jar')
 }
