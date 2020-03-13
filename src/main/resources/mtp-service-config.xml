@@ -90,6 +90,13 @@
 		<property name="confirmEditCancel" value="false"/>
 		 -->
 
+		<!-- 編集画面でキャンセル時にTopViewに戻るか
+			 デフォルト戻らない(詳細画面に戻る)に設定されています。TopViewに戻りたい場合はtrueを設定してください。
+		 -->
+		<!--
+		<property name="topViewEditCancelBackToTop" value="true"/>
+		 -->
+
 		<!-- 検索画面でリセットボタンを表示するか
 			 デフォルトで表示するに設定されています。非表示にしたい場合はfalseを設定してください。
 		-->
