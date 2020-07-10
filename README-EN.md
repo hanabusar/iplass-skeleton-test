@@ -8,7 +8,7 @@ For the guide to use it, please refer to the following documents.
 
 https://iplass.org/en/docs/gettingstarted/installguide/
 
-The current release of skeleton in version 3.0 can be acquired from the branch of 3.0.x.
+**The current release of skeleton in version 3.0 can be acquired from the branch of 3.0.x.**
 
 ## Related repositories
 
