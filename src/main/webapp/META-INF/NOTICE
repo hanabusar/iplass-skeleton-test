@@ -252,11 +252,6 @@ This software includes third party components, as follows:
   com.graphbuilder.org.apache.harmony.awt.gl.Crossing is from the Apache Harmony project and is released under the Apache 2.0 licens.
   https://github.com/virtuald/curvesapi
 
-- google-gson
-  Copyright (c) Google Inc.
-  Licensed under the Apache License 2.0.
-  https://github.com/google/gson
-
 - GWT
   Copyright (c) Google Inc.
   Licensed under the Apache License 2.0.
