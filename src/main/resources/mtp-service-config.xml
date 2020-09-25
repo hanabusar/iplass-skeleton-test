@@ -38,6 +38,7 @@
 		ライブラリ「iplass-gem-x.x.x.jar」内に格納されている「gem-service-config.xml」、
 		ライブラリ「iplass-web-x.x.x.jar」内に格納されている「mtp-web-service-config.xml」、
 		ライブラリ「iplass-tools-x.x.x.jar」内に格納されている「mtp-tools-service-config.xml」、
+		ライブラリ「iplass-infinispan-x.x.x.jar」内に格納されている「infinispan-service-config.xml」、
 		ライブラリ「iplass-redis-x.x.x.jar」内に格納されている「redis-service-config.xml」を参照し、
 		必要な箇所をこのファイルに指定してください。
 	-->
