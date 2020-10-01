@@ -8,7 +8,8 @@ For the guide to use it, please refer to the following documents.
 
 https://iplass.org/en/docs/gettingstarted/installguide/
 
-**The current release of skeleton in version 3.0 can be acquired from the branch of 3.0.x.**
+The master branch is a skeleton project for version 3.1.
+The skeleton for version 3.0 is obtained from the 3.0.x branch.
 
 ## Related repositories
 
