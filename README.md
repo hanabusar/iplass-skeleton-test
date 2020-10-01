@@ -8,7 +8,8 @@ iPLAssベースのカスタムアプリケーションを作成する場合のgr
 
 https://iplass.org/docs/gettingstarted/installguide/
 
-**現行リリースされているバージョン3.0のスケルトンは3.0.xブランチより取得してください**
+masterブランチはバージョン3.1のスケルトンプロジェクトです。
+バージョン3.0のスケルトンは3.0.xブランチより取得してください。
 
 ## Related repositories
 
