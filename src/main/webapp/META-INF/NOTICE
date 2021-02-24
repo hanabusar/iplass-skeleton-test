@@ -468,6 +468,10 @@ This software includes third party components, as follows:
   Licensed under The JSON License.(http://json.org/license.html)
   https://github.com/stleary/JSON-java
 
+- Jxls
+  Licensed under the Apache License 2.0.
+  https://github.com/jxlsteam/jxls
+
 - Logback Classic Module
   Copyright (C) 1999-2015, QOS.ch.
   Licensed under The Eclipse Public License v1.0 or GNU Lesser General Public License version 2.1.
