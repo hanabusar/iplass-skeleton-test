@@ -424,9 +424,9 @@ This software includes third party components, as follows:
   https://javaee.github.io/glassfish/
 
 - International Components for Unicode for Java
-  Copyright (c) International Business Machines Corporation and others.
-  Licensed under ICU License - ICU 1.8.1 and later.
-  see details: http://bugs.icu-project.org/trac/browser/tags/release-57-1/icu4j/main/shared/licenses/LICENSE
+  Copyright (c) Unicode, Inc. and others.
+  Licensed under Unicode/ICU License.
+  see details: https://raw.githubusercontent.com/unicode-org/icu/master/icu4c/LICENSE
   http://site.icu-project.org/
 
 - iText
