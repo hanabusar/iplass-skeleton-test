@@ -421,124 +421,20 @@
 		-->
 	</service>
 
-	<!--
-		■全文検索で利用するService
-
-		useFulltextSearch：				全文検索を利用する場合は、trueへ変更してください。
-		maxRows：						全文検索の結果件数の上限を設定してください。
-		throwExceptionWhenOverLimit：	maxRows以上の件数がヒットした場合の挙動を切り替えます。
-										true  -> 件数以上取得できたことのメッセージを表示し、検索結果は出さない。
-										false -> 件数以上取得できたことのメッセージを表示し、検索結果も出す。
-
-		□ lucene利用
-		directory：
-			Index情報（検索対象値）の保存先を指定してください。
-		analyzer：
-			利用するanalyzerを指定してください。
-		analyzerSetting：
-			利用するanalyzerを初期化する設定クラスです。省略可。
-
-			設定例
-			org.apache.lucene.analysis.ja.JapaneseAnalyzerを利用する際に以下の初期化項目が設定可能です。
-
-			<class>org.iplass.mtp.impl.fulltextsearch.FulltextSearchLuceneService</class>
-			......
-			<property name="analyzer" value="org.apache.lucene.analysis.ja.JapaneseAnalyzer" />
-			<property name="analyzerSetting" class="org.iplass.mtp.impl.fulltextsearch.JapaneseAnalyzerSetting">
-				<property name="userDictionary" value="/lucene/userdict.txt" />
-				<property name="stopwords" value="/lucene/stopwords.txt" />
-				<property name="stoptags" value="/lucene/stoptags.txt" />
-				<property name="mode" value="SEARCH" />
-			</property>
-			......
-
-			userDictionary：ユーザ定義辞書。クラスパス上に配置する必要があります。省略可。
-			mode：org.apache.lucene.analysis.ja.JapaneseTokenizer.Modeで定義されたトークナイゼーションモード。	省略時デフォルトSERACH。
-			stopwords：ストップワード定義ファイル。クラスパス上に配置する必要があります。省略可。
-			stoptags：ストップタグ定義ファイル。クラスパス上に配置する必要があります。省略可。
-
-		indexWriterRAMBufferSizeMB：
-			Index作成時のメモリのキャッシュサイズを設定します。
-		redundantTimeMinutes：
-			「前回Index更新日時-redundantTimeMinutes」より後のデータに対してIndexの処理を行います。
-		luceneFSDirectory：
-			ファイルシステムにINDEXファイルを保存するLucene Directoryの実装クラス。省略時デフォルトorg.apache.lucene.store.SimpleFSDirectory。
-		luceneFSDirectoryMaxChunkSizeMB：
-			org.apache.lucene.store.MMapDirectory クラスが利用する時メモリマッピング用maxChunkSizeです。
-			org.apache.lucene.store.MMapDirectory 以外が選択されている場合、この設定値は無視されます。
-			省略時デフォルト  1 GiBytes for 64 bit JVMs and 256 MiBytes for 32 bit JVMs。
-		searcherAutoRefreshTimeMinutes：
-			iPLAssが保持しているLuceneのIndexSearcher( ≒ IndexReader)が自動的に更新される時間間隔（分）です。
-			「0」以下の値を設定している場合、自動更新処理は実行されません。
-			省略時デフォルト-1。
-
-
-		■use to fulltext search service
-
-		useFulltextSearch：				If use fulltext search, change to true.
-		maxRows：						Setting max rows of fulltext search result.
-		throwExceptionWhenOverLimit：	If maxRows or more of the search result is hit, set one of the operations.
-										true  -> Display a message that was able to get maxRows or more, and not display search result.
-										false -> Display a message that was able to get maxRows or more, and display search result.
-
-		□ use to lucene
-		directory：
-			Set save directory of the index information.
-		analyzer：
-			Set the analyzer to use
-		analyzerSetting：
-			Set the analyzerSetting class to initialize analyzer. This setting is optional.
-
-			e.g.
-			If use org.apache.lucene.analysis.ja.JapaneseAnalyzer, initial settings are available as follows. 
-
-			<class>org.iplass.mtp.impl.fulltextsearch.FulltextSearchLuceneService</class>
-			......
-			<property name="analyzer" value="org.apache.lucene.analysis.ja.JapaneseAnalyzer" />
-			<property name="analyzerSetting" class="org.iplass.mtp.impl.fulltextsearch.JapaneseAnalyzerSetting">
-				<property name="userDictionary" value="/lucene/userdict.txt" />
-				<property name="stopwords" value="/lucene/stopwords.txt" />
-				<property name="stoptags" value="/lucene/stoptags.txt" />
-				<property name="mode" value="SEARCH" />
-			</property>
-			......
-
-			userDictionary： User dictionary. Place on classpath. This setting is optional.
-			mode： Tokenization mode that defined in org.apache.lucene.analysis.ja.JapaneseTokenizer.Mode. Optional, the default is SERACH.
-			stopwords： stopwords file. Place on classpath. This setting is optional.
-			stoptags： stoptags file. Place on classpath. This setting is optional.
-
-		indexWriterRAMBufferSizeMB：
-			Setting the memory cache size when creating a index.
-		redundantTimeMinutes：
-			do the processing of the Index for the data after the "previous Index update date -redundantTimeMinutes".
-		luceneFSDirectory：
-			Implementation class of Lucene Directory that store INDEX files in the file system. This setting is optional, 
-			default is org.apache.lucene.store.SimpleFSDirectory.
-		luceneFSDirectoryMaxChunkSizeMB：
-			Maximum chunk size used for memory mapping if use org.apache.lucene.store.MMapDirectory.
-			This setting is ignored if setting value of luceneFSDirectory is other than org.apache.lucene.store.MMapDirectory.
-			This setting is optional, default is 1 GiBytes for 64 bit JVMs and 256 MiBytes for 32 bit JVMs.
-		searcherAutoRefreshTimeMinutes：
-			Time interval (minute) used by iPLAss to update IndexSearcher( ≒ IndexReader) automatically.
-			The processing of automatic updating is disabled if this setting value is lower or equal than 0.
-			This setting is optional, default is -1.
-	-->
+	<!-- Full Text Search SErvice Settings -->
 	<service>
 		<interface>org.iplass.mtp.impl.fulltextsearch.FulltextSearchService</interface>
+	
+		<!-- 全文検索を利用する場合は、trueへ変更してください -->
 		<property name="useFulltextSearch" value="false" />
 		<property name="maxRows" value="1000" />
 		<property name="throwExceptionWhenOverLimit" value="true"/>
 
-		<!-- lucene利用 -->
+		<!-- lucene利用の場合 -->
 		<!--
-		<class>org.iplass.mtp.impl.fulltextsearch.FulltextSearchLuceneService</class>
-		<property name="directory" value="D:\tmp\lucene" />
+		<class>org.iplass.mtp.impl.fulltextsearch.lucene.LuceneFulltextSearchService</class>
 		<property name="defaultOperator" value="AND" />
-		<property name="analyzer" value="org.apache.lucene.analysis.ja.JapaneseAnalyzer" />
-		<property name="indexWriterRAMBufferSizeMB" value="64.0"/>
-		<property name="redundantTimeMinutes" value="10"/>
-		<property name="luceneFSDirectory" value="org.apache.lucene.store.SimpleFSDirectory" />
+		<property name="directory" value="[/set/your/lucene/index/dir]" />
 		<property name="searcherAutoRefreshTimeMinutes" value="-1" />
 		-->
 
