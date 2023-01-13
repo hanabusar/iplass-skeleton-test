@@ -118,13 +118,13 @@ tasks.withType(JavaExec) {
 
 // テナント作成ツール実行
 task runTenantBatch(type: JavaExec, group: 'application', description : 'execute tenant batch.') {
-	main = "org.iplass.mtp.tools.batch.tenant.TenantBatch"
+	mainClass = "org.iplass.mtp.tools.batch.tenant.TenantBatch"
 	classpath = sourceSets.main.runtimeClasspath
 }
 
 // Entity Java マッピングクラス作成ツール実行
 task createEntityClass(type: JavaExec, group: 'application', description : 'create entity java class.') {
-	main = "org.iplass.mtp.tools.batch.entity.EntityJavaMappingClassCreator"
+	mainClass = "org.iplass.mtp.tools.batch.entity.EntityJavaMappingClassCreator"
 	classpath = sourceSets.main.runtimeClasspath
 	standardInput = System.in
 }
@@ -138,6 +138,6 @@ task createEntityClass(type: JavaExec, group: 'application', description : 'crea
 //   実行例２：パース及びサービスのロード、'skeleton-service-config.xml'ファイルへ出力
 //     gradlew viewMergedServiceConfig --args="-m PARSE_LOAD -o skeleton-service-config.xml"
 task viewMergedServiceConfig(type: JavaExec, group: 'application', description : 'view merged service-config.') {
-	main = "org.iplass.mtp.tools.batch.config.ServiceConfigViewer"
+	mainClass = "org.iplass.mtp.tools.batch.config.ServiceConfigViewer"
 	classpath = sourceSets.main.runtimeClasspath
 }
