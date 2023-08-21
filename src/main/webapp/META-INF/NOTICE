@@ -88,6 +88,11 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   http://commons.apache.org/proper/commons-text/
 
+- Apache Commons Pool
+  Copyright (c) The Apache Software Foundation.
+  Licensed under the Apache License 2.0.
+  https://commons.apache.org/proper/commons-pool/
+
 - Apache FontBox
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
