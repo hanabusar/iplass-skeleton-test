@@ -60,6 +60,9 @@
 		<!-- CSVダウンロード件数上限値 -->
 		<property name="csvDownloadMaxCount" value="65535" />
 
+		<!-- 検索処理で表示ラベルとして扱うプロパティを検索条件に利用するか -->
+		<property name="useDisplayLabelItemInSearch" value="true" />
+
 		<!-- CSVダウンロード文字コード -->
 		<!--
 		gem-service-config.xmlにUTF8が設定されています。
