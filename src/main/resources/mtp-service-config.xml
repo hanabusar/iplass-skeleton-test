@@ -63,6 +63,9 @@
 		<!-- 検索処理で表示ラベルとして扱うプロパティを検索条件に利用するか -->
 		<property name="useDisplayLabelItemInSearch" value="true" />
 
+		<!-- CSVダウンロード処理で表示ラベルとして扱うプロパティを出力するか -->
+		<property name="useDisplayLabelItemInCsvDownload" value="true" />
+
 		<!-- CSVダウンロード文字コード -->
 		<!--
 		gem-service-config.xmlにUTF8が設定されています。
