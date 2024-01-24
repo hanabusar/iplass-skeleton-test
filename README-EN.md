@@ -13,7 +13,7 @@ The skeleton for version 3.1 is obtained from the 3.1.x branch.
 
 ## Related repositories
 
-* <https://github.com/ISID/iPLAss>
+* <https://github.com/dentsusoken/iPLAss>
 
 ## License
 

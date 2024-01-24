@@ -13,7 +13,7 @@ masterブランチはバージョン3.2のスケルトンプロジェクトで�
 
 ## Related repositories
 
-* <https://github.com/ISID/iPLAss>
+* <https://github.com/dentsusoken/iPLAss>
 
 ## License
 
