@@ -262,11 +262,6 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   https://github.com/gwtproject/gwt
 
-- GwtUpload library
-  Copyright (c) Manolo Carrasco (Manuel Carrasco Moñino).
-  Licensed under the Apache License 2.0.
-  https://github.com/manolo/gwtupload
-
 - Hibernate Validator
   Copyright (c) see copyright.txt(https://github.com/hibernate/hibernate-validator/blob/5.4.1.Final/copyright.txt)
   Licensed under the Apache License 2.0.
@@ -416,6 +411,11 @@ This software includes third party components, as follows:
   Licensed under Eclipse Distribution License 1.0.
   https://projects.eclipse.org/projects/ee4j.jaxb-impl
 
+- metadata-extractor
+  Copyright (C) Drew Noakes and contributors and tballison.
+  Licensed under The Apache Software License, Version 2.0
+  https://github.com/tballison/metadata-extractor
+
 - MIME streaming extension
   Copyright (c) Oracle and/or its affiliates.
   Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
@@ -434,16 +434,13 @@ This software includes third party components, as follows:
   see details: https://raw.githubusercontent.com/unicode-org/icu/master/icu4c/LICENSE
   http://site.icu-project.org/
 
-- iText
-  Copyright (C) Bruno Lowagie, Paulo Soares, Michael Niedermair, Dr. Heinz, M. Kabutz, Nigel Kerr, Takenori, Sivan Toledo, Oren Manor,
-                Ygal Blum, Kevin Day, Phillip Pan, by Jeremy Bowman, Joakim Sandstroem, Steve Appling, Mark Thompson, Jim Moore, Galo Gimenez,
-                Josselin PUJO, Ken Borgendale, Martin Brunecky, Leonard Rosenthol, Armin Haberling, Mark Hall, Howard Shank, Thomas Bickel,
-                Jose Hurtado, Carsten Hammer, Johannes Schindelin, Hans-Werner Hilse.
-  Licensed under both LGPL v2 and MPL v 1.1.
-  https://itextpdf.com/
+- OpenPDF
+  Copyright (C) Bruno Lowagie, iText/OpenPDF contributors maintained by LibrePDF.
+  Licensed under GNU Lesser General Public License (LGPL), Version 2.1 and Mozilla Public License Version 2.0.
+  https://github.com/LibrePDF/OpenPDF
 
 - JasperReports Library
-  Copyright (c) TIBCO Software Inc.
+  Copyright (c) Cloud Software Group, Inc.
   Licensed under GNU Lesser General Public License v3.0.
   https://github.com/TIBCOSoftware/jasperreports
 
