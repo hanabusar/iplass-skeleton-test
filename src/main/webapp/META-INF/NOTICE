@@ -203,7 +203,7 @@ This software includes third party components, as follows:
   Licensed under the Bouncy Castle Licence.
   https://www.bouncycastle.org
 
-- Bouncy Castle S/MIME API
+- Bouncy Castle Jakarta S/MIME
   Copyright (c) The Legion of the Bouncy Castle Inc.
   Licensed under the Bouncy Castle Licence.
   https://www.bouncycastle.org
@@ -234,17 +234,9 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   http://github.com/FasterXML/jackson-databind
 
-- Jackson-JAXRS-base
+- Jackson-Jakarta-RS-JSON
   Licensed under the Apache License 2.0.
-  https://github.com/FasterXML/jackson-jaxrs-providers/
-
-- Jackson-JAXRS-JSON
-  Licensed under the Apache License 2.0.
-  https://github.com/FasterXML/jackson-jaxrs-providers
-
-- Jackson module: JAXB-annotations
-  Licensed under the Apache License 2.0.
-  http://github.com/FasterXML/jackson-module-jaxb-annotations
+  https://github.com/FasterXML/jackson-jakarta-rs-providers
 
 - ZXing Core
   Copyright (c) ZXing authors.
@@ -263,7 +255,7 @@ This software includes third party components, as follows:
   https://github.com/gwtproject/gwt
 
 - Hibernate Validator
-  Copyright (c) see copyright.txt(https://github.com/hibernate/hibernate-validator/blob/5.4.1.Final/copyright.txt)
+  Copyright (c) Contributors to the Hibernate Validator. see copyright.txt ( corresponding version at https://github.com/hibernate/hibernate-validator/ )
   Licensed under the Apache License 2.0.
   http://hibernate.org/validator/
 
@@ -297,101 +289,40 @@ This software includes third party components, as follows:
   see details: https://javaee.github.io/glassfish/LICENSE
   https://github.com/javaee/hk2
 
-- javax.annotation API
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://jcp.org/en/jsr/detail?id=250
+- Eclipse Angus - Activation
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  see details: https://projects.eclipse.org/projects/ee4j.angus
+  https://github.com/eclipse-ee4j/angus-activation/
 
-- Expression Language
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://javaee.github.io/uel-ri/
+- Eclipse Angus - Mail
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+    see details: https://projects.eclipse.org/projects/ee4j.angus
+  https://github.com/eclipse-ee4j/angus-mail/
 
-- JavaMail API
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/javaee/javamail
+- Eclipse ExpressLy
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.expressly
 
-- JavaServer Pages (TM) TagLib Implementation
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/javaee/jstl-api
+- Eclipse Implementation of JAXB
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under Eclipse Distribution License 1.0.
+  https://projects.eclipse.org/projects/ee4j.jaxb-impl
 
-- JavaServer Pages(TM) Standard Tag Library API
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://jcp.org/en/jsr/detail?id=52
-
-- javax.ws.rs-api
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jax-rs
-
-- jersey-core-client
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey/
-
-- jersey-core-common
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey/
-
-- jersey-container-servlet
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey
-
-- jersey-container-servlet-core
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey
-
-- jersey-ext-entity-filtering
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey
-
-- jersey-repackaged-guava
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey
-
-- jersey-media-jaxb
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey
-
-- jersey-media-json-jackson
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey
-
-- jersey-media-multipart
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey
-
-- jersey-core-server
-  Copyright (c) Oracle and/or its affiliates.
-  Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
-  see details: https://javaee.github.io/glassfish/LICENSE
-  https://github.com/jersey/jersey
+- Eclipse Jersey ( jersey-bom, jersey-container-servlet, jersey-media-json-jackson, jersey-media-multipart, jersey-hk2 )
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.jersey
 
 - Jakarta Activation
   Copyright (c) 2018 Oracle and/or its affiliates.
@@ -401,15 +332,73 @@ This software includes third party components, as follows:
     - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
   https://projects.eclipse.org/projects/ee4j.jaf
 
+- Jakarta Activation
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Distribution License 1.0 (BSD)
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.jaf
+
+- Jakarta Annotations
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.ca
+
+- Jakarta Expression Language
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.el
+
+- Jakarta Mail
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.mail
+
+- Jakarta RESTful Web Services
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.rest
+
+- Jakarta Server Pages
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.jsp
+
+- Jakarta Standard Tag Library
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  https://projects.eclipse.org/projects/ee4j.jstl
+
+- Jakarta Standard Tag Library Implementation
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under
+    Eclipse Public License 2.0
+    - (Secondary) GNU General Public License, version 2 with the GNU Classpath Exception
+  see details: https://projects.eclipse.org/projects/ee4j.jstl
+  https://github.com/jakartaee/tags/tree/3.x
+
+- Jakarta Validation API
+  Copyright (c) Contributors to the Eclipse Foundation.
+  Licensed under Apache Software License 2.0.
+  https://projects.eclipse.org/projects/ee4j.validation
+
 - Jakarta XML Binding
-  Copyright (c) 2017, 2018 Oracle and/or its affiliates.
+  Copyright (c) Contributors to the Eclipse Foundation.
   Licensed under Eclipse Distribution License 1.0.
   https://projects.eclipse.org/projects/ee4j.jaxb
-
-- Eclipse Implementation of JAXB
-  Copyright (c) 2018 Oracle and/or its affiliates.
-  Licensed under Eclipse Distribution License 1.0.
-  https://projects.eclipse.org/projects/ee4j.jaxb-impl
 
 - metadata-extractor
   Copyright (C) Drew Noakes and contributors and tballison.
