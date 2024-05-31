@@ -1,6 +1,12 @@
-apply plugin: 'java'
-apply plugin: 'war'
-apply plugin: 'eclipse-wtp'
+plugins {
+	id 'java'
+	id 'war'
+	id 'eclipse-wtp'
+}
+
+ext {
+	javaVersion = JavaVersion.VERSION_21
+}
 
 repositories {
 	mavenCentral()
@@ -77,11 +83,9 @@ dependencies {
 	// Jakarta EL runtime
 	runtimeOnly 'org.glassfish.expressly:expressly:5.0.0'
 
-
-	// TODO junit 5 へ
-	testImplementation 'junit:junit:4.12'
-
 	testImplementation 'org.iplass:iplass-test'
+	testImplementation platform('org.junit:junit-bom:5.10.2')
+	testImplementation 'org.junit.jupiter:junit-jupiter'
 
 	// 以下のJDBCドライバはテナント作成ツール(runTenantBatchタスク)の実行に必要となります。
 	// 実行する場合は使用するJDBCドライバのコメントアウトを外してください。
@@ -91,6 +95,11 @@ dependencies {
 //	providedRuntime 'com.microsoft.sqlserver:mssql-jdbc:8.2.2.jre8'
 
 	providedRuntime fileTree('lib').include('**/*.jar')
+}
+
+java {
+	sourceCompatibility = javaVersion
+	targetCompatibility = javaVersion
 }
 
 tasks.withType(AbstractCompile) {
@@ -105,6 +114,10 @@ tasks.withType(JavaExec) {
 	if (System.getProperty('mtp.config') != null) {
 		systemProperty 'mtp.config', System.getProperty('mtp.config')
 	}
+}
+
+test {
+	useJUnitPlatform()
 }
 
 // テナント作成ツール実行
