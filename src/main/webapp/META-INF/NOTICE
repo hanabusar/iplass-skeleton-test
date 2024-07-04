@@ -123,17 +123,12 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   https://pdfbox.apache.org/
 
-- Lucene Search Engine: analyzers-common
+- Lucene Search Engine: analysis-common
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
   http://lucene.apache.org/
 
-- Lucene Search Engine: analyzers-kuromoji
-  Copyright (c) The Apache Software Foundation.
-  Licensed under the Apache License 2.0.
-  http://lucene.apache.org/
-
-- Lucene Search Engine: analyzers-smartcn
+- Lucene Search Engine: analysis-kuromoji
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
   http://lucene.apache.org/
@@ -144,11 +139,6 @@ This software includes third party components, as follows:
   http://lucene.apache.org/
 
 - Lucene Search Engine: core
-  Copyright (c) The Apache Software Foundation.
-  Licensed under the Apache License 2.0.
-  http://lucene.apache.org/
-
-- Lucene Search Engine: highlighter
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
   http://lucene.apache.org/
