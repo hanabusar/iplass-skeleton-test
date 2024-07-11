@@ -307,7 +307,7 @@ This software includes third party components, as follows:
   Licensed under Eclipse Distribution License 1.0.
   https://projects.eclipse.org/projects/ee4j.jaxb-impl
 
-- Eclipse Jersey ( jersey-bom, jersey-container-servlet, jersey-media-json-jackson, jersey-media-multipart, jersey-hk2 )
+- Eclipse Jersey ( jersey-bom, jersey-container-servlet, jersey-media-jaxb, jersey-media-json-jackson, jersey-media-multipart, jersey-hk2 )
   Copyright (c) Contributors to the Eclipse Foundation.
   Licensed under
     Eclipse Public License 2.0

@@ -67,6 +67,7 @@ dependencies {
 	// Jakarta rest runtime
 	runtimeOnly platform('org.glassfish.jersey:jersey-bom:3.1.5')
 	runtimeOnly 'org.glassfish.jersey.containers:jersey-container-servlet'
+	runtimeOnly 'org.glassfish.jersey.media:jersey-media-jaxb'
 	runtimeOnly 'org.glassfish.jersey.media:jersey-media-json-jackson'
 	runtimeOnly 'org.glassfish.jersey.media:jersey-media-multipart'
 	runtimeOnly 'org.glassfish.jersey.inject:jersey-hk2'
