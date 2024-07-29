@@ -118,11 +118,6 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   http://hc.apache.org/index.html
 
-- Apache JempBox
-  Copyright (c) The Apache Software Foundation.
-  Licensed under the Apache License 2.0.
-  https://pdfbox.apache.org/
-
 - Lucene Search Engine: analysis-common
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
@@ -158,16 +153,6 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   http://lucene.apache.org/
 
-- Apache PDFBox
-  Copyright (c) The Apache Software Foundation.
-  Licensed under the Apache License 2.0.
-  https://pdfbox.apache.org/
-
-- Apache PDFBox tools
-  Copyright (c) The Apache Software Foundation.
-  Licensed under the Apache License 2.0.
-  https://pdfbox.apache.org/
-
 - Apache POI
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
@@ -178,7 +163,27 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   http://tika.apache.org/
 
-- Apache Tika parsers
+- Apache Tika html parser module
+  Copyright (c) The Apache Software Foundation.
+  Licensed under the Apache License 2.0.
+  http://tika.apache.org/
+
+- Apache Tika XML parser module
+  Copyright (c) The Apache Software Foundation.
+  Licensed under the Apache License 2.0.
+  http://tika.apache.org/
+
+- Apache Tika Microsoft parser module
+  Copyright (c) The Apache Software Foundation.
+  Licensed under the Apache License 2.0.
+  http://tika.apache.org/
+
+- Apache Tika PDF parser module
+  Copyright (c) The Apache Software Foundation.
+  Licensed under the Apache License 2.0.
+  http://tika.apache.org/
+
+- Apache Tika ZIP commons
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
   http://tika.apache.org/
@@ -390,11 +395,6 @@ This software includes third party components, as follows:
   Licensed under Eclipse Distribution License 1.0.
   https://projects.eclipse.org/projects/ee4j.jaxb
 
-- metadata-extractor
-  Copyright (C) Drew Noakes and contributors and tballison.
-  Licensed under The Apache Software License, Version 2.0
-  https://github.com/tballison/metadata-extractor
-
 - MIME streaming extension
   Copyright (c) Oracle and/or its affiliates.
   Licensed under GNU General Public License Version 2 only or the Common Development and Distribution License.
@@ -477,11 +477,6 @@ This software includes third party components, as follows:
   Copyright (c) Kasper B. Graversen.
   Licensed under the Apache License 2.0.
   https://github.com/super-csv/super-csv
-
-- TagSoup
-  Copyright (c) John Cowan.
-  Licensed under the Apache License 2.0.
-  http://ccil.org/~cowan/XML/tagsoup/
 
 - blueimp-canvas-to-blob
   Copyright (c) Sebastian Tschan.
