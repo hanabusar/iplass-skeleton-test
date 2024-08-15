@@ -103,17 +103,12 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   http://groovy.apache.org/
 
-- Apache HttpClient
+- Apache HttpComponents Client
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
   http://hc.apache.org/index.html
 
-- Apache HttpCore
-  Copyright (c) The Apache Software Foundation.
-  Licensed under the Apache License 2.0.
-  http://hc.apache.org/httpcomponents-core-ga/
-
-- Apache HttpClient Mime
+- Apache HttpComponents Core
   Copyright (c) The Apache Software Foundation.
   Licensed under the Apache License 2.0.
   http://hc.apache.org/index.html
