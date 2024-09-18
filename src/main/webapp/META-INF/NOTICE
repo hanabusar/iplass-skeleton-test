@@ -262,6 +262,11 @@ This software includes third party components, as follows:
   Licensed under the Apache License 2.0.
   https://github.com/gwtproject/gwt
 
+- Google Auth Library (google-auth-library-oauth2-http)
+  Copyright (c) Google Inc.
+  Licensed under the BSD 3-Clause License.
+  https://github.com/googleapis/google-auth-library-java/
+
 - Hibernate Validator
   Copyright (c) see copyright.txt(https://github.com/hibernate/hibernate-validator/blob/5.4.1.Final/copyright.txt)
   Licensed under the Apache License 2.0.
