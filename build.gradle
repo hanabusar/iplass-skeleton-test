@@ -3,6 +3,10 @@ plugins {
 	id 'war'
 	id 'eclipse-wtp'
 	id 'org.iplass.dev' version '1.0.0'
+	id 'checkstyle'
+    id 'com.github.spotbugs' version '5.2.5'
+    id "org.owasp.dependencycheck" version "12.1.0"
+	id "com.vanniktech.dependency.graph.generator" version "0.6.0"
 }
 
 ext {
@@ -17,6 +21,14 @@ repositories {
 			url iPLAssMavenRepoUrl
 		}
 	}
+}
+
+configurations {
+    umlGraphDoclet {
+        canBeResolved = true
+        canBeConsumed = false
+        extendsFrom configurations.compileOnly
+    }
 }
 
 dependencies {
@@ -101,6 +113,13 @@ dependencies {
 //	providedRuntime 'com.oracle.database.jdbc:ojdbc8:23.4.0.24.05'
 
 	providedRuntime fileTree('lib').include('**/*.jar')
+    spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.13.0'
+
+    // JavaParser を追加
+    implementation 'com.github.javaparser:javaparser-core:3.25.4'
+    // シンボルソルバー用ライブラリを追加
+    implementation 'com.github.javaparser:javaparser-symbol-solver-core:3.25.4'
+
 }
 
 java {
@@ -169,3 +188,54 @@ task viewMergedServiceConfig(type: JavaExec, group: 'application', description :
 //	// RDB管理しているメタデータパスを入力する。
 //	source = ['/entity/*', '/staticresource/*']
 //}
+checkstyle {
+    toolVersion = '10.12.3' // 任意の安定版に合わせて変更可能
+    configFile = rootProject.file('config/google_checks.xml')
+    configProperties = [
+        'checkstyle.cache.file': "${buildDir}/checkstyle.cache",
+        'charset': 'UTF-8'
+    ]
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.required.set(true)
+        html.required.set(true)
+    }
+    include '**/*.java'
+    exclude '**/*.xml', '**/*.properties'
+}
+
+spotbugs {
+    toolVersion = '4.8.3'
+    effort = 'max'
+    reportLevel = 'low'
+}
+
+tasks.withType(com.github.spotbugs.snom.SpotBugsTask).configureEach {
+    reports {
+        xml.required.set(false)
+        html.required.set(true) // HTMLレポートを出力
+    }
+}
+
+dependencyCheck {
+    failBuildOnCVSS = 7.0
+    suppressionFile = 'config/dependency-check-suppressions.xml'
+    outputDirectory = "${buildDir}/reports/dependency-check"
+    formats = ['HTML', 'XML']
+    analyzers {
+        assemblyEnabled = false
+        nodeAuditEnabled = false
+    }
+    nvd {
+        apiKey = "ef069757-b731-4941-8fbb-dc7f236154ff"
+    }
+}
+// UML 生成タスクの追加
+task generateUml(type: JavaExec) {
+    main = 'diagram.GenerateUml'
+    classpath = sourceSets.main.runtimeClasspath
+    args = [project.hasProperty("includeTest") ? "true" : "false"]
+    doFirst { mkdir "$buildDir/uml" }
+}
